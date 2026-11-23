@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب‌سایت من</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Tahoma, sans-serif;
+            background: linear-gradient(135deg, #101827, #174b68);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .card {
+            max-width: 500px;
+            margin: auto;
+            padding: 40px;
+            background: #ffffff15;
+            border-radius: 20px;
+        }
+
+        h1 { color: #38d9ff; }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            background: #38d9ff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>سلام دنیا! 🚀</h1>
+        <p>اولین وب‌سایت من روی GitHub</p>
+        <button onclick="alert('سایت با موفقیت اجرا شد!')">
+            کلیک کن
+        </button>
+    </div>
+
+</body>
+</html>
