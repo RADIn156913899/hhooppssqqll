@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آکادمی کالی لینوکس | آموزش امنیت سایبری</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, sans-serif;
+            background: #080e18;
+            color: white;
+        }
+
+        header {
+            background: #101c2b;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 2px solid #00e5a0;
+        }
+
+        header h1 {
+            color: #00e5a0;
+            font-size: 30px;
+        }
+
+        nav {
+            background: #142438;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #00e5a0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #080e18, #123047);
+        }
+
+        .hero h2 {
+            color: #00e5a0;
+            font-size: 32px;
+        }
+
+        .hero p {
+            color: #bdc9d6;
+            line-height: 2.2;
+        }
+
+        button {
+            background: #00e5a0;
+            color: #080e18;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #00bd85;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #00e5a0;
+            margin-top: 55px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: #142438;
+            padding: 25px;
+            width: 260px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #25445b;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #00e5a0;
+        }
+
+        .card h3 {
+            color: #00e5a0;
+        }
+
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+            color: #bdc9d6;
+            line-height: 2.2;
+        }
+
+        footer {
+            background: #101c2b;
+            text-align: center;
+            padding: 25px;
+            color: #9aabba;
+            border-top: 1px solid #25445b;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐉 آکادمی کالی لینوکس</h1>
+    <p>دروازه ورود به دنیای امنیت سایبری</p>
+</header>
+
+<nav>
+    <a href="#">خانه</a>
+    <a href="#about">درباره ما</a>
+    <a href="#courses">آموزش‌ها</a>
+    <a href="#contact">ارتباط</a>
+</nav>
+
+<section class="hero">
+    <h2>به دنیای امنیت خوش آمدید!</h2>
+
+    <p>
+        لینوکس، شبکه و امنیت سایبری را
+        از پایه تا پیشرفته یاد بگیرید.
+    </p>
+
+    <button onclick="document.getElementById('courses').scrollIntoView()">
+        شروع یادگیری
+    </button>
+</section>
+
+<h2 class="section-title" id="courses">مسیرهای آموزشی</h2>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>🐧 کالی لینوکس</h3>
+        <p>آشنایی با سیستم‌عامل کالی و دستورات ترمینال</p>
+    </div>
+
+    <div class="card">
+        <h3>🌐 شبکه</h3>
+        <p>یادگیری IP، DNS و پروتکل‌های شبکه</p>
+    </div>
+
+    <div class="card">
+        <h3>🔐 امنیت سایبری</h3>
+        <p>آشنایی با مفاهیم و ابزارهای امنیت</p>
+    </div>
+
+    <div class="card">
+        <h3>🧪 آزمایشگاه عملی</h3>
+        <p>تمرین در محیط‌های قانونی و آزمایشگاهی</p>
+    </div>
+
+</section>
+
+<h2 class="section-title" id="about">درباره آکادمی</h2>
+
+<section class="about">
+    <p>
+        هدف این آکادمی، آموزش رایگان و ساده مفاهیم
+        لینوکس، شبکه و امنیت سایبری است.
+        <br>
+        تمام تمرین‌های عملی باید در محیط‌های مجاز
+        و آزمایشگاهی انجام شوند.
+    </p>
+</section>
+
+<footer id="contact">
+    <p>اولین پروژه وب من ❤️ | ساخته شده توسط Radin</p>
+    <p>© تمامی حقوق محفوظ است.</p>
+</footer>
+
+</body>
+</html>
