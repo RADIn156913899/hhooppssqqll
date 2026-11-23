@@ -2,48 +2,145 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وب‌سایت من</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Tahoma, sans-serif;
-            background: linear-gradient(135deg, #101827, #174b68);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آکادمی کالی لینوکس</title>
 
-        .card {
-            max-width: 500px;
-            margin: auto;
-            padding: 40px;
-            background: #ffffff15;
-            border-radius: 20px;
-        }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-        h1 { color: #38d9ff; }
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background: #080e18;
+    color: white;
+}
 
-        button {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 10px;
-            background: #38d9ff;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
+header {
+    background: #101c2b;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #00e5a0;
+}
+
+header h1 {
+    color: #00e5a0;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.hero h2 {
+    color: #00e5a0;
+    font-size: 30px;
+}
+
+.hero p {
+    color: #bdc9d6;
+    line-height: 2;
+}
+
+button {
+    background: #00e5a0;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: #142438;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #25445b;
+}
+
+.card h3 {
+    color: #00e5a0;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #9aabba;
+}
+
+</style>
 </head>
+
 <body>
 
+<header>
+    <h1>🐉 آکادمی کالی لینوکس</h1>
+    <p>دروازه ورود به دنیای امنیت سایبری</p>
+</header>
+
+<nav>
+    <a href="#">خانه</a>
+    <a href="#about">درباره ما</a>
+    <a href="#courses">آموزش‌ها</a>
+</nav>
+
+<section class="hero" id="about">
+    <h2>به دنیای امنیت خوش آمدید!</h2>
+
+    <p>
+        لینوکس، شبکه و امنیت سایبری را
+        از پایه تا پیشرفته یاد بگیرید.
+    </p>
+
+    <button onclick="alert('به آکادمی کالی خوش آمدید!')">
+        شروع یادگیری
+    </button>
+</section>
+
+<section class="cards" id="courses">
+
     <div class="card">
-        <h1>سلام دنیا! 🚀</h1>
-        <p>اولین وب‌سایت من روی GitHub</p>
-        <button onclick="alert('سایت با موفقیت اجرا شد!')">
-            کلیک کن
-        </button>
+        <h3>🐧 لینوکس</h3>
+        <p>آموزش دستورات و محیط کالی لینوکس</p>
     </div>
+
+    <div class="card">
+        <h3>🌐 شبکه</h3>
+        <p>آموزش IP، DNS و پروتکل‌های شبکه</p>
+    </div>
+
+    <div class="card">
+        <h3>🔐 امنیت سایبری</h3>
+        <p>آشنایی با ابزارها و مفاهیم امنیت</p>
+    </div>
+
+</section>
+
+<footer>
+    اولین پروژه وب من ❤️ | Radin
+</footer>
 
 </body>
 </html>
